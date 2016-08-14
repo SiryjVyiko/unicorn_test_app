@@ -5,8 +5,6 @@ log_file   = "log/unicorn.log"
 err_log    = "log/unicorn_error.log"
 old_pid    = pid_file + '.oldbin'
 
-environment ENV['RAILS_ENV'] || 'development'
-
 timeout 30
 worker_processes 4 
 listen socket_file, :backlog => 1024
