@@ -1,8 +1,8 @@
 rails_root = "current"
 pid_file   = "unicorn.pid"
 socket_file= "/var/www/webroot/ROOT/tmp/sockets/unicorn.socket"
-log_file   = "log/unicorn.log"
-err_log    = "log/unicorn_error.log"
+log_file   = "/var/log/nginx/unicorn.log"
+err_log    = "/var/log/nginx/unicorn_error.log"
 old_pid    = pid_file + '.oldbin'
 
 timeout 30
